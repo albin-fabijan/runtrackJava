@@ -5,7 +5,6 @@ import java.util.Vector;
 import java.util.Date;
 
 public class Commerciale {
-    // Classe représentant la gestion commerciale
 
     private Vector<Article> articles = new Vector<>();
     private Vector<Client> clients = new Vector<>();

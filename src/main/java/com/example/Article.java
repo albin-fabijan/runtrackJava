@@ -1,11 +1,13 @@
 package com.example;
 
 public class Article {
-    private int reference;
-    private String designation;
-    private double prixUnitaire;
-    private int quantiteStock;
+    // Déclaration des attributs
+    private int reference; // Référence de l'article
+    private String designation; // Désignation de l'article
+    private double prixUnitaire; // Prix unitaire de l'article
+    private int quantiteStock; // Quantité en stock de l'article
 
+    // Constructeur avec paramètres
     public Article(int reference, String designation, double prixUnitaire, int quantiteStock) {
         this.reference = reference;
         this.designation = designation;
@@ -13,6 +15,7 @@ public class Article {
         this.quantiteStock = quantiteStock;
     }
 
+    // Constructeur de copie
     public Article(Article a) {
         this.reference = a.reference;
         this.designation = a.designation;
@@ -20,6 +23,7 @@ public class Article {
         this.quantiteStock = a.quantiteStock;
     }
 
+    // Méthodes d'accès aux attributs
     public int getReference() {
         return reference;
     }
@@ -52,6 +56,7 @@ public class Article {
         this.quantiteStock = quantiteStock;
     }
 
+    // Méthode pour afficher les informations de l'article
     public void affiche() {
         System.out.println("Référence: " + reference);
         System.out.println("Désignation: " + designation);

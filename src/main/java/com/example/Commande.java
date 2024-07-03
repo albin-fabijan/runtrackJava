@@ -3,9 +3,9 @@ package com.example;
 import java.util.Date;
 
 public class Commande {
-    private int numeroCommande;
-    private Date dateCommande;
-    private Client client;
+    private int numeroCommande; // Numéro de commande
+    private Date dateCommande; // Date de commande
+    private Client client; // Client associé à la commande
 
     public Commande(int numeroCommande, Date dateCommande, Client client) {
         this.numeroCommande = numeroCommande;
@@ -43,4 +43,3 @@ public class Commande {
         client.affiche();
     }
 }
-

@@ -1,9 +1,10 @@
 package com.example;
 
 public class Ligne {
-    private Commande commande;
-    private Article article;
-    private int quantiteCommande;
+
+    private Commande commande; // La commande associée à la ligne
+    private Article article; // L'article associé à la ligne
+    private int quantiteCommande; // La quantité commandée de l'article
 
     public Ligne(Commande commande, Article article, int quantiteCommande) {
         this.commande = commande;
